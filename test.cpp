@@ -5,8 +5,11 @@ using namespace std;
 int main(){
 
     std::string a = "abc";
-    for (auto i:a){
-        std::cout<<i;
-    }
+    std::vector<std::string> strs;
+    strs.push_back("aaa");
+    strs.push_back("bbb");
+//    for (auto i:strs){
+//        std::cout<<i;
+//    }
     return 0;
 }
