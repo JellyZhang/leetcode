@@ -1,8 +1,3 @@
-#include <bits/stdc++.h>
-#include <algorithm>
-using namespace std;
-
-
 class Solution {
 public:
     string convert(string s, int numRows) {
@@ -22,11 +17,3 @@ public:
         return ans;
     }
 };
-
-int main(){
-    string a;
-    cin>>a;
-    Solution s;
-    cout<<s.convert(a,1);
-    return 0;
-}

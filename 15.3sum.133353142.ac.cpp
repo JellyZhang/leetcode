@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -19,7 +16,10 @@ public:
                 if(*it1+*it2>target)it2--;
                 else if(*it1+*it2<target)it1++;
                 else {
-                        ans.push_back({*(it1++),*(it2--),*it3});
+                        vector<int> temp{*it1,*it2,*it3};
+                        ans.push_back(temp);
+                        it1++;
+                        it2--;
                         while(*it1==*(it1-1))it1++;
                         while(*it2==*(it2+1))it2--;
                 }
@@ -30,16 +30,3 @@ public:
         return ans;
     }
 };
-
-int main(){
-    vector<int>nums{-2,0,0,2,2};
-    Solution S;
-    vector<vector<int> > a=S.threeSum(nums);
-    for(auto i:a){
-        for(auto j:i){
-            cout<<j;
-        }
-        cout<<endl;
-    }
-    return 0;
-}

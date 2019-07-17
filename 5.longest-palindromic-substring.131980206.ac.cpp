@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -30,11 +26,3 @@ public:
         return s.substr(ans_left,ans_len);
     }
 };
-
-int main(){
-    string a;
-    cin>>a;
-    Solution s;
-    cout<<s.longestPalindrome(a);
-    return 0;
-}
