@@ -1,7 +1,3 @@
-#include <string>
-#include <vector>
-#include <iostream>
-using namespace std;
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -24,8 +20,8 @@ public:
                         ans.push_back(temp);
                         it1++;
                         it2--;
-                        while(*it1==*(it1-1))it1++;
-                        while(*it2==*(it2+1))it2--;
+                        while(it1!=nums.end()-1 && *it1==*(it1-1))it1++;
+                        while(it2!=nums.begin() && *it2==*(it2+1))it2--;
                 }
                 //cout<<"!"<<endl;
                // cout<<*it1<<"    "<<*it2<<endl;
@@ -34,19 +30,3 @@ public:
         return ans;
     }
 };
-int main(){
-
-    //std::string a = "abc";
-    //std::vector<std::string> strs;
-    //strs.push_back("aaa");
-    //strs.push_back("bbb");
-//    for (auto i:strs){
-//        std::cout<<i;
-//    }
-    Solution s;
-    vector<int> nums = {2,-2,4};
-    vector<vector<int>> t = s.threeSum(nums);
-    cout<<t.size();
-
-    return 0;
-}
