@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
+#include <algorithm>
 #include <iostream>
+#include <queue>
 using namespace std;
 class Solution {
 public:
@@ -34,6 +36,25 @@ public:
         return ans;
     }
 };
+struct Node{
+    int x;
+    int y;
+    Node(int a,int b){
+        x=a;
+        y=b;
+    }
+
+};
+struct cmp{
+    bool operator()(const Node &a ,const Node &b){
+        if(a.x!=b.x){
+            return b.x<a.x;// a b 交换位置的条件
+        }
+        else{
+            return a.y<b.y;
+        }
+    }
+};
 int main(){
 
     //std::string a = "abc";
@@ -43,10 +64,31 @@ int main(){
 //    for (auto i:strs){
 //        std::cout<<i;
 //    }
-    Solution s;
-    vector<int> nums = {2,-2,4};
-    vector<vector<int>> t = s.threeSum(nums);
-    cout<<t.size();
+    //Solution s;
+    //vector<int> nums = {2,-2,4};
+    //vector<vector<int>> t = s.threeSum(nums);
+    //cout<<t.size();
+    //
+    //priority_queue<Node,vector<Node>,cmp> q;
+    //q.push(Node(1,2));
+    //q.push(Node(2,2));
+    //q.push(Node(1,1));
+    //q.push(Node(2,1));
+    //q.push(Node(1,3));
+    //while(!q.empty()){
+        //Node top = q.top();
+        //cout<<top.x<<" "<<top.y<<endl;
+        //q.pop();
+    //}
+    //vector<int> v={1,2,2,3,4,5,6};
+    //cout<<upper_bound(begin(v),end(v),2)-v.begin()<<endl;
+    //cout<<upper_bound(begin(v),end(v),6)-v.begin()<<endl;
+    //cout<<upper_bound(begin(v),end(v),7)-v.begin()<<endl;
+    vector<int> v={6,5,4,3,2,2,1};
+    cout<<upper_bound(end(v),begin(v),2)-v.begin()<<endl;
+    cout<<upper_bound(end(v),begin(v),6)-v.begin()<<endl;
+    cout<<upper_bound(end(v),begin(v),7)-v.begin()<<endl;
+
 
     return 0;
 }
