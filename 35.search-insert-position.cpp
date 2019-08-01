@@ -16,11 +16,8 @@ public:
             if(nums.at(mid)<target){
                 p=mid+1;
             }
-            else if(nums.at(mid)> target){
+            else if(nums.at(mid)>= target){
                 q=mid-1;
-            }
-            else{
-                return mid;
             }
         }
         //target only possible in [p,q];
