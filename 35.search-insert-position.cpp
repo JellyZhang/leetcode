@@ -10,14 +10,23 @@ public:
         int p=0;
         int q=nums.size()-1;
         int mid = (p+q)>>1;
+        //while(p<=q){
+            ////cout<<p<<" "<<q<<endl;
+            //mid = (p+q)>>1;
+            //if(nums.at(mid)<target){
+                //p=mid+1;
+            //}
+            //else if(nums.at(mid)>= target){
+                //q=mid-1;
+            //}
+        //}
         while(p<=q){
-            //cout<<p<<" "<<q<<endl;
             mid = (p+q)>>1;
-            if(nums.at(mid)<target){
-                p=mid+1;
+            if(nums[mid]<target){
+                p = mid+1;
             }
-            else if(nums.at(mid)>= target){
-                q=mid-1;
+            else if(nums[mid]>=target){
+                q = mid-1;
             }
         }
         //target only possible in [p,q];
