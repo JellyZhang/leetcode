@@ -84,10 +84,12 @@ int main(){
     //cout<<upper_bound(begin(v),end(v),2)-v.begin()<<endl;
     //cout<<upper_bound(begin(v),end(v),6)-v.begin()<<endl;
     //cout<<upper_bound(begin(v),end(v),7)-v.begin()<<endl;
-    vector<int> v={6,5,4,3,2,2,1};
-    cout<<upper_bound(end(v),begin(v),2)-v.begin()<<endl;
-    cout<<upper_bound(end(v),begin(v),6)-v.begin()<<endl;
-    cout<<upper_bound(end(v),begin(v),7)-v.begin()<<endl;
+    //vector<int> v={6,5,4,3,2,2,1};
+    //cout<<upper_bound(end(v),begin(v),2)-v.begin()<<endl;
+    //cout<<upper_bound(end(v),begin(v),6)-v.begin()<<endl;
+    //cout<<upper_bound(end(v),begin(v),7)-v.begin()<<endl;
+    int *a[3];
+    cout<<*a;
 
 
     return 0;
