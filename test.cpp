@@ -88,8 +88,11 @@ int main(){
     //cout<<upper_bound(end(v),begin(v),2)-v.begin()<<endl;
     //cout<<upper_bound(end(v),begin(v),6)-v.begin()<<endl;
     //cout<<upper_bound(end(v),begin(v),7)-v.begin()<<endl;
-    int *a[3];
-    cout<<*a;
+    //int *a[3];
+    //cout<<*a;
+    Node* ptr = new Node(100,200);
+    cout<<((ptr!=NULL)?(ptr->x):(0));
+    
 
 
     return 0;
