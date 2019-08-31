@@ -47,18 +47,26 @@ public:
         TreeNode* curr = root;
         while(curr){
             if(curr->left==NULL){
+                //visit
                 ans.push_back(curr->val);
                 curr = curr->right;
             }
             else{
                 //find right most node of curr's left subtree
                 TreeNode* pre = curr->left;
-                while(pre->right){
+                while(pre->right && pre->right!=curr){
                     pre = pre->right;
                 }
-                pre->right = curr;
-                curr = curr->left;
-                pre->right->left=NULL;
+                if(!pre->right){
+                    pre->right = curr;
+                    curr = curr->left;
+                }
+                else{
+                    pre->right = NULL;
+                    //visit
+                    ans.push_back(curr->val);
+                    curr = curr->right;
+                }
             }
         }
         return ans;
