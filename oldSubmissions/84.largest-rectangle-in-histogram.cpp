@@ -49,22 +49,16 @@ public:
         int len = heights.size();
         stack<int> sta;
         int ans=0;
-        for(int i=0;i<len;++i){
+        int i=0;
+        while(i<len){
             if(sta.empty() || heights[i]>=heights[sta.top()]){
-                sta.push(i);
+                sta.push(i++);
             }
             else{
-                int tp = sta.top();
+                int height = heights[sta.top()];
                 sta.pop();
-                int res;
-                if(sta.empty()){
-                    res = heights[tp]*(i);
-                }
-                else{
-                    res = heights[tp]*(i-sta.top()-1);
-                }
-                ans=max(ans,res);
-                --i;
+                int j = (sta.empty())?-1:sta.top();
+                ans=max(ans,height*(i-j-1));
             }
         }
         return ans;

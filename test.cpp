@@ -88,10 +88,16 @@ int main(){
         //cout<<top.x<<" "<<top.y<<endl;
         //q.pop();
     //}
-    //vector<int> v={1,2,2,3,4,5,6};
-    //cout<<upper_bound(begin(v),end(v),2)-v.begin()<<endl;
-    //cout<<upper_bound(begin(v),end(v),6)-v.begin()<<endl;
-    //cout<<upper_bound(begin(v),end(v),7)-v.begin()<<endl;
+    vector<int> v={1,2,2,2,4,5,6};
+    cout<<upper_bound(begin(v),end(v),0)-v.begin()<<endl;
+    cout<<upper_bound(begin(v),end(v),6)-v.begin()<<endl;
+    cout<<upper_bound(begin(v),end(v),3)-v.begin()<<endl;
+    cout<<upper_bound(begin(v),end(v),7)-v.begin()<<endl;
+    int a = 20;
+    int b = a >> 31;
+    cout<< ( (~b)&a ) || ( b&a );
+
+
     //vector<int> v={6,5,4,3,2,2,1};
     //cout<<upper_bound(end(v),begin(v),2)-v.begin()<<endl;
     //cout<<upper_bound(end(v),begin(v),6)-v.begin()<<endl;
@@ -100,11 +106,11 @@ int main(){
     //cout<<*a;
     //Node* ptr = new Node(100,200);
     //cout<<((ptr!=NULL)?(ptr->x):(0));
-    vector<int> vec;
-    vec.assign({1,5,3,5,2,3});
-    sort(vec.begin(),vec.end());
-    for(int i=0;i<vec.size();++i)
-        cout<<vec[i]<<" ";
+    //vector<int> vec;
+    //vec.assign({1,5,3,5,2,3});
+    //sort(vec.begin(),vec.end());
+    //for(int i=0;i<vec.size();++i)
+        //cout<<vec[i]<<" ";
     
 
 
