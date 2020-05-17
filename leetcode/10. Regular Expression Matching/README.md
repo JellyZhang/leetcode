@@ -83,7 +83,7 @@ bool isMatch(string s, string p){
 
 DP. From back to start. O(n^2)
 
-dp[i] [j] => whether s[0~i-1] and p[0~j-1] matches.
+dp[i] [j] => whether s[0 -> i-1] and p[0 -> j-1] matches.
 
 firstly, dp[s.size()] [p.size()] = 1 , we assume it matches at end, then find whether dp[0] [0] == 1.
 
