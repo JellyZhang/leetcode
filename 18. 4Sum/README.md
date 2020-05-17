@@ -1,0 +1,53 @@
+#### 18. 4Sum
+
+> Given an array `nums` of *n* integers and an integer `target`, are there elements *a*, *b*, *c*, and *d* in `nums` such that *a* + *b* + *c* + *d* = `target`? Find all unique quadruplets in the array which gives the sum of `target`.
+>
+> **Note:**
+>
+> The solution set must not contain duplicate quadruplets.
+>
+> **Example:**
+>
+> ```
+> Given array nums = [1, 0, -1, 0, -2, 2], and target = 0.
+> 
+> A solution set is:
+> [
+> [-1,  0, 0, 1],
+> [-2, -1, 1, 2],
+> [-2,  0, 0, 2]
+> ]
+> ```
+
+
+
+```c++
+vector<vector<int>> fourSum(vector<int>& nums, int target) {
+        if(nums.size() < 4) return {};
+        sort(nums.begin(), nums.end());
+        vector<vector<int>> ans;
+        for(int i=0;i<nums.size();i++){
+            if(i-1>=0 && nums[i] == nums[i-1]) continue;
+            for(int j=i+1; j<nums.size();++j){
+                if(j-1>=i+1 && nums[j] == nums[j-1]) continue;
+                int p = j+1;
+                int q = nums.size()-1;
+                int t = target - nums[i] - nums[j];
+                while(p < q){
+                    if(nums[p] + nums[q] < t) p++;
+                    else if(nums[p] + nums[q] > t) q--;
+                    else {
+                        ans.push_back({nums[i], nums[j], nums[p], nums[q]});
+                        while(p < q && nums[p] == nums[p+1]) p++;
+                        p++;
+                        while(p < q && nums[q] == nums[q-1]) q--;
+                        q--;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+```
+
+similar to 3sum
