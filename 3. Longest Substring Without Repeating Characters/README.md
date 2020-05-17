@@ -50,4 +50,3 @@ when sliding, check whether s[j] has shown in s[i~j]. if so, then move i to (the
     }
 ```
 
-#### 

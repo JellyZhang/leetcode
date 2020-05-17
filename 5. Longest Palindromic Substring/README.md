@@ -49,4 +49,3 @@ string longestPalindrome(string s) {
     }
 ```
 
-#### 
