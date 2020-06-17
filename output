@@ -1,0 +1,28 @@
+pre=2147483647 cur=4
+pre=4 cur=1
+pre=1 cur=0
+pre=0 cur=3
+DO
+pre=0 cur=2
+DO
+2
+pre=2147483647 cur=2
+pre=2 cur=4
+DO
+pre=2 cur=1
+pre=1 cur=0
+pre=0 cur=3
+DO
+2
+pre=2147483647 cur=4
+pre=4 cur=3
+pre=3 cur=2
+pre=2 cur=1
+pre=1 cur=0
+0
+pre=2147483647 cur=3
+pre=3 cur=1
+pre=1 cur=2
+DO
+pre=1 cur=0
+1
