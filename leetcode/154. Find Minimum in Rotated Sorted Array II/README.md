@@ -41,7 +41,7 @@ public:
             if(nums[low] == nums[mid] && nums[mid] == nums[high]){
                 high--;
                 continue;
-                // can also do low--, but will need to prove when mid at rotate-point
+                // can also do low++,but need some prove
             }
             if(nums[mid] <= nums[high]){
                 high = mid;
