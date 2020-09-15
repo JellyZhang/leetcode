@@ -4,7 +4,9 @@ Author: Jelly.
 
 If this repo helps you, please give it a 🌟. Thanks. 
 
-Gitbook lilnk:https://zhangjelly0405.gitbook.io/leetcode/
+Gitbook link:https://zhangjelly0405.gitbook.io/leetcode/
+
+Github link:https://github.com/JellyZhang/leetcode
 
 ##Important Questions
 
