@@ -31,7 +31,7 @@ If this repo helps you, please give it a 🌟. Thanks. 🥰
 | 25   | Reverse Nodes in k-Group                       | ★★★        |  [Solution](leetcode/25.%20Reverse%20Nodes%20in%20k-Group)   |
 | 26   | Remove Duplicates from Sorted Array            | ★          | [Solution](leetcode/26.%20Remove%20Duplicates%20from%20Sorted%20Array) |
 | 27   | Remove Element                                 | ★          |         [Solution](leetcode/27.%20Remove%20Element)          |
-|      |                                                |            |                                                              |
+| 28   | Implement strStr()                             | ★★★        |       [Solution](leetcode/28.%20Implement%20strStr())        |
 |      |                                                |            |                                                              |
 |      |                                                |            |                                                              |
 |      |                                                |            |                                                              |
