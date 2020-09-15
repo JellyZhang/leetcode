@@ -1,0 +1,131 @@
+> A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
+>
+> Return a [**deep copy**](https://en.wikipedia.org/wiki/Object_copying#Deep_copy) of the list.
+>
+> The Linked List is represented in the input/output as a list of `n` nodes. Each node is represented as a pair of `[val, random_index]` where:
+>
+> - `val`: an integer representing `Node.val`
+> - `random_index`: the index of the node (range from `0` to `n-1`) where random pointer points to, or `null` if it does not point to any node.
+>
+>  
+>
+> **Example 1:**
+>
+> ![img](README.assets/e1.png)
+>
+> ```
+> Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+> Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+> ```
+>
+> **Example 2:**
+>
+> ![img](README.assets/e2.png)
+>
+> ```
+> Input: head = [[1,1],[2,1]]
+> Output: [[1,1],[2,1]]
+> ```
+>
+> **Example 3:**
+>
+> **![img](README.assets/e3.png)**
+>
+> ```
+> Input: head = [[3,null],[3,0],[3,null]]
+> Output: [[3,null],[3,0],[3,null]]
+> ```
+>
+> **Example 4:**
+>
+> ```
+> Input: head = []
+> Output: []
+> Explanation: Given linked list is empty (null pointer), so return null.
+> ```
+>
+>  
+>
+> **Constraints:**
+>
+> - `-10000 <= Node.val <= 10000`
+> - `Node.random` is null or pointing to a node in the linked list.
+> - Number of Nodes will not exceed 1000.
+
+```cpp
+
+class Solution {
+public:
+    Node* copyRandomList(Node* head) {
+    if(!head) return head;
+        // copy
+        Node* cur = head;
+        while(cur){
+            Node* cp = new Node(cur->val);
+            cp->next = cur->next;
+            cp->random = cur->random;
+            cur->next = cp;
+            cur = cp->next;
+        }
+        // fix
+        cur = head;
+        while(cur){
+            if(cur->next->random){
+                cur->next->random = cur->next->random->next;
+            }
+            cur = cur->next->next;
+        }
+        // break
+        cur = head;
+        Node *newHead = cur->next;
+        while(cur){
+            Node* nxt = cur->next->next;
+            if(nxt){
+                cur->next->next = nxt->next; 
+            }else{
+                cur->next->next = NULL;
+            }
+            cur->next = nxt;
+            cur = nxt;
+        }
+        return newHead;
+    }
+
+};
+```
+
+![img](README.assets/138_Copy_List_Random_10.png)
+
+Solution #1, we copy a copy next to every node with random pointing at the origin node.
+
+then we fix the random pointer, by steping ahead one step.
+
+At last, we break the chain into 2 linklist.
+
+
+
+```cpp
+class Solution {
+public:
+    Node* copyRandomList(Node* head) {
+        unordered_map<Node*, Node*> mp;
+        return getCopy(head, mp);
+    }
+    
+    Node* getCopy(Node* node, unordered_map<Node*, Node*>& mp){
+        if(!node) return NULL;
+        if(mp.count(node)){
+            return mp[node];
+        }
+        Node* cp = new Node(node->val);
+        mp[node] = cp;
+        cp->next = getCopy(node->next, mp);
+        cp->random = getCopy(node->random, mp);
+        return cp;
+    }
+};
+```
+
+Solution #2, using a hashmap to store those nodes already been copied.
+
+similar to #133, #1485

@@ -22,31 +22,35 @@
 
 
 ```c++
-ListNode* reverseKGroup(ListNode* head, int k) {
-        ListNode *dummy = new ListNode(0);
+
+class Solution {
+public:
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if(!head || !head->next || k == 1) return head;
+        ListNode* dummy = new ListNode(0);
         dummy->next = head;
-        ListNode *p = dummy;
+        ListNode* prev = dummy;
         while(true){
-            ListNode *end = p;
-            for(int i=0;i<k && end;++i){
-                end = end->next;
+            ListNode* cur = prev->next;
+            int cnt = 0;
+            while(cnt < k && cur){
+                cur = cur->next;
+                cnt++;
             }
-            if(!end) break;
-            ListNode* newp = p->next;
-            end = end->next;
-            ListNode *prev = end;
-            ListNode *cur = p->next;
-            while(cur != end){
-                ListNode *nxt = cur->next;
-                cur->next = prev;
-                prev = cur;
-                cur = nxt;
+            if(cnt < k) break;
+            cur = prev->next;
+            for(int i=0;i<cnt-1;++i){
+                ListNode* nxt = cur->next;
+                cur->next = nxt->next;
+                nxt->next = prev->next;
+                prev->next = nxt;
             }
-            p->next = prev;
-            p = newp;
+            prev = cur;
         }
         return dummy->next;
     }
+};
 ```
 
 #### 
+
