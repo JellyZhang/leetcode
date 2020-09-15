@@ -4,6 +4,8 @@ Author: Jelly.
 
 If this repo helps you, please give it a 🌟. Thanks. 
 
+Gitbook lilnk:https://zhangjelly0405.gitbook.io/leetcode/
+
 ##Important Questions
 
 | #            | Title                                          | Importance |
