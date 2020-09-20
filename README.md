@@ -1,4 +1,4 @@
-##Leetcode Summary
+## Leetcode Summary
 
 Author: Jelly.
 
@@ -8,7 +8,7 @@ Gitbook link:https://zhangjelly0405.gitbook.io/leetcode/
 
 Github link:https://github.com/JellyZhang/leetcode
 
-##Important Questions
+## Important Questions
 
 | #                 | Title                                          | Importance |
 | :---------------- | :--------------------------------------------- | ---------- |
