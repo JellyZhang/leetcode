@@ -42,6 +42,9 @@ Github link:https://github.com/JellyZhang/leetcode
 | 230               | Kth Smallest Element in a BST                  | ★★         |
 | 98                | Validate Binary Search Tree                    | ★★★        |
 | 102               | Binary Tree Level Order Traversal              | ★★★        |
+| 94                | Binary Tree Inorder Traversal                  | ★★★★★      |
+| 144               | Binary Tree Preorder Traversal                 | ★★★★★      |
+| 145               | Binary Tree Postorder Traversal                | ★★★★★      |
 |                   |                                                |            |
 |                   |                                                |            |
 |                   |                                                |            |
