@@ -22,8 +22,8 @@ Github link:https://github.com/JellyZhang/leetcode
 | 56                | Merge Intervals                                | ★★★★★      |
 | 60                | Permutation Sequence                           | ★★★        |
 | 154               | Find Minimum in Rotated Sorted Array II        | ★★★★       |
-|                   |                                                |            |
-|                   |                                                |            |
+| 215               | Kth Largest Element in an Array                | ★★★★★      |
+| 315               | Count of Smaller Numbers After Self            | ★★★        |
 |                   |                                                |            |
 | **String**        |                                                |            |
 | 3                 | Longest Substring Without Repeating Characters | ★★★        |
@@ -45,7 +45,7 @@ Github link:https://github.com/JellyZhang/leetcode
 | 94                | Binary Tree Inorder Traversal                  | ★★★★★      |
 | 144               | Binary Tree Preorder Traversal                 | ★★★★★      |
 | 145               | Binary Tree Postorder Traversal                | ★★★★★      |
-|                   |                                                |            |
+| 236               | Lowest Common Ancestor of a Binary Tree        | ★★★        |
 |                   |                                                |            |
 |                   |                                                |            |
 | **DP**            |                                                |            |
@@ -79,6 +79,8 @@ Github link:https://github.com/JellyZhang/leetcode
 | 69                | Sqrt(x)                                        | ★★★        |
 | 133               | Clone Graph                                    | ★★★        |
 | 969               | Pancake Sorting                                | ★★★        |
+| 224               | Basic Calculator                               | ★★★★       |
+|                   |                                                |            |
 
 
 
