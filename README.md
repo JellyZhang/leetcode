@@ -24,6 +24,9 @@ Github link:https://github.com/JellyZhang/leetcode
 | 154               | Find Minimum in Rotated Sorted Array II        | ★★★★       |
 | 215               | Kth Largest Element in an Array                | ★★★★★      |
 | 315               | Count of Smaller Numbers After Self            | ★★★        |
+| 188               | Best Time to Buy and Sell Stock IV             | ★★★★★      |
+|                   |                                                |            |
+|                   |                                                |            |
 |                   |                                                |            |
 | **String**        |                                                |            |
 | 3                 | Longest Substring Without Repeating Characters | ★★★        |
