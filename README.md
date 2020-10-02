@@ -25,7 +25,7 @@ Github link:https://github.com/JellyZhang/leetcode
 | 215               | Kth Largest Element in an Array                | ★★★★★      |
 | 315               | Count of Smaller Numbers After Self            | ★★★        |
 | 188               | Best Time to Buy and Sell Stock IV             | ★★★★★      |
-|                   |                                                |            |
+| 862               | Shortest Subarray with Sum at Least K          | ★★★★★      |
 |                   |                                                |            |
 |                   |                                                |            |
 | **String**        |                                                |            |
