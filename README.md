@@ -60,7 +60,7 @@ Github link:https://github.com/JellyZhang/leetcode
 | 877               | Stone Game                                     | ★★★★       |
 | 1043              | Partition Array for Maximum Sum                | ★★★        |
 | 1406              | Stone Game III                                 | ★★★★       |
-|                   |                                                |            |
+| 416               | Partition Equal Subset Sum                     | ★★★★       |
 |                   |                                                |            |
 |                   |                                                |            |
 | **DFS/BFS**       |                                                |            |
