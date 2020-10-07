@@ -83,7 +83,7 @@ Github link:https://github.com/JellyZhang/leetcode
 | 133               | Clone Graph                                    | ★★★        |
 | 969               | Pancake Sorting                                | ★★★        |
 | 224               | Basic Calculator                               | ★★★★       |
-|                   |                                                |            |
+| 547               | Friend Circles                                 | ★★★★       |
 
 
 
