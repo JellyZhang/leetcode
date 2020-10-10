@@ -40,6 +40,9 @@ Github link:https://github.com/JellyZhang/leetcode
 | 2                 | Add Two Numbers                                | ★★★        |
 | 23                | Merge k Sorted Lists                           | ★★★        |
 | 25                | Reverse Nodes in k-Group                       | ★★★★★      |
+| 142               | Linked List Cycle II                           | ★★★        |
+| 143               | Reorder List                                   | ★★★★       |
+|                   |                                                |            |
 |                   |                                                |            |
 | **Tree**          |                                                |            |
 | 230               | Kth Smallest Element in a BST                  | ★★         |
