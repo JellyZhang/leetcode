@@ -26,7 +26,9 @@ Github link:https://github.com/JellyZhang/leetcode
 | 315               | Count of Smaller Numbers After Self            | ★★★        |
 | 188               | Best Time to Buy and Sell Stock IV             | ★★★★★      |
 | 862               | Shortest Subarray with Sum at Least K          | ★★★★★      |
-|                   |                                                |            |
+| 51                | Maximum Subarray                               | ★★★★★      |
+| 300               | Longest Increasing Subsequence                 | ★★★★★      |
+| 43                | Multiply Strings                               | ★★★★       |
 |                   |                                                |            |
 | **String**        |                                                |            |
 | 3                 | Longest Substring Without Repeating Characters | ★★★        |
