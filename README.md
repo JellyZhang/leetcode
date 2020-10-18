@@ -89,6 +89,9 @@ Github link:https://github.com/JellyZhang/leetcode
 | 969               | Pancake Sorting                                | ★★★        |
 | 224               | Basic Calculator                               | ★★★★       |
 | 547               | Friend Circles                                 | ★★★★       |
+| 146               | LRU Cache                                      | ★★★★       |
+|                   |                                                |            |
+|                   |                                                |            |
 
 
 
